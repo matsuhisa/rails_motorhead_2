@@ -17,3 +17,4 @@ group :development do
   gem 'web-console'
   gem 'spring'
 end
+gem 'new_books', path: 'app/engines/new_books'
