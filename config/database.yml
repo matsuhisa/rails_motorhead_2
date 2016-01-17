@@ -1,0 +1,25 @@
+default: &default
+  adapter: mysql2
+  pool: 5
+  encoding: utf8
+
+development:
+  <<: *default
+  username: root
+  password:
+  host: 127.0.0.1
+  database: motorhead_development
+
+test:
+  <<: *default
+  username: root
+  password:
+  host: 127.0.0.1
+  database: motorhead_test
+
+production:
+  <<: *default
+  username: root
+  password:
+  host: 127.0.0.1
+  database: motorhead_production
